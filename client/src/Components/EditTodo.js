@@ -10,7 +10,7 @@ const EditTodo = ({todo}) => {
         try {
             e.preventDefault()
             const body = {description}
-            const response = await fetch(`https://newserver66-phjv6c9db-lvictors-projects.vercel.app/todos/${todo.todo_id}` , {
+            const response = await fetch(`https://newserver66-cshyehufj-lvictors-projects.vercel.app/todos/${todo.todo_id}` , {
               "mode" :"no-cors",
                 "method" : "PUT",
                 "headers" : {"Content-Type" : "application/json"},
