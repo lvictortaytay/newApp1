@@ -41,6 +41,7 @@ const ListTodos = () => {
 
     useEffect(() => {
         getTodos()
+        console.log(todos)
         
     }, [])
 
