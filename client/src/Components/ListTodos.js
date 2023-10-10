@@ -24,7 +24,7 @@ const ListTodos = () => {
     const getTodos = async () => {
         try {
             
-            const response = await fetch(`https://newserver66.vercel.app/todos` , {
+            const response = await fetch(`https://newserver66-o71uhl629-lvictors-projects.vercel.app/todos` , {
                 "mode" :"no-cors"
             })
             const jsonData = await response.json()
