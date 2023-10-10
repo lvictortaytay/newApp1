@@ -28,7 +28,7 @@ const ListTodos = () => {
                 "API_KEY" : "f41b66e4-804b-4604-9ed4-c4367916940a",
                 "mode" :"no-cors"
             })
-            const jsonData = await response.json()
+            const jsonData = await JSON.parse(response)
             setTodos(jsonData)
 
 
