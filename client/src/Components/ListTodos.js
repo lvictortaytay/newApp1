@@ -26,10 +26,14 @@ const ListTodos = () => {
             
             const response = await fetch(`https://newserver66-dz8w6vvr0-lvictors-projects.vercel.app/todos` , {
                 method , "GET",
-                headers : { "API_KEY" : "f41b66e4-804b-4604-9ed4-c4367916940a"},
+                headers: {
+            'X-API-KEY': 'f41b66e4-804b-4604-9ed4-c4367916940a',
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
                 mode :"no-cors"
             })
-            const jsonData = await JSON.parse(response)
+            const jsonData = await response.json()
             setTodos(jsonData)
 
 
