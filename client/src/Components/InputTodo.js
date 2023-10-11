@@ -28,7 +28,7 @@ const InputTodo = () => {
             window.location = "/"
 
         } catch (error) {
-            console.error(error.message)
+            return(error.message)
         }
     }
 
