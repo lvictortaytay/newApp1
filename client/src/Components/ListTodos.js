@@ -24,7 +24,7 @@ const ListTodos = () => {
     const getTodos = async () => {
         try {
             
-            const response = await fetch(`https://newserver66-dz8w6vvr0-lvictors-projects.vercel.app/todos` , {
+            const response = await fetch(`https://newserver66-c7qzhu9jm-lvictors-projects.vercel.app/todos` , {
                 'method' : "GET",
                 'headers': {
             'X-API-KEY': 'f41b66e4-804b-4604-9ed4-c4367916940a',
