@@ -30,7 +30,8 @@ const InputTodo = () => {
         } catch (error) {
             return(error.message)
         }
-    }window.location = "/"
+        window.location = "/"
+    }
 
     return (
         <Fragment>
