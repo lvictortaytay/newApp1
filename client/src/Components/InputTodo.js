@@ -16,7 +16,6 @@ const InputTodo = () => {
         try {
             const body = {description}
             const response = await fetch(`https://newserver66-c7qzhu9jm-lvictors-projects.vercel.app/todos`, {
-                "mode" : "cors",
                 "method": "POST" ,
                 "headers" : {"content-type" :"application/json"  , "API_KEY" : "f41b66e4-804b-4604-9ed4-c4367916940a"},
                 "body" : JSON.stringify(body)
