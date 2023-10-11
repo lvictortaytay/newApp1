@@ -25,12 +25,12 @@ const InputTodo = () => {
             console.log(body)
             
  
-            window.location = "/"
+            // window.location = "/"
 
         } catch (error) {
             return(error.message)
         }
-    }
+    }window.location = "/"
 
     return (
         <Fragment>
