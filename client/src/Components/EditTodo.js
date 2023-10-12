@@ -11,7 +11,6 @@ const EditTodo = ({todo}) => {
             e.preventDefault()
             const body = {description}
             const response = await fetch(`https://server-35tb.onrender.com/todos/${todo.todo_id}` , {
-              "mode" :"no-cors",
                 "method" : "PUT",
                 "headers" : {"Content-Type" : "application/json"},
                 "body" : JSON.stringify(body)
