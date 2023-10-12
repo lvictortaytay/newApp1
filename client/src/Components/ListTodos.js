@@ -10,7 +10,7 @@ const ListTodos = () => {
 
     const handleTodoDelete = async (id) => {
         try {
-            const deleteTodo = await fetch(`https://newserver66-8kkapbjt4-lvictors-projects.vercel.app/todos/${id}`, {
+            const deleteTodo = await fetch(`https://server-35tb.onrender.com/todos/:${id}`, {
                 "method" :"DELETE"
             } )
 
@@ -23,7 +23,7 @@ const ListTodos = () => {
     const getTodos = async () => {
         try {
             
-            const response = await fetch(`https://newserver66-c7qzhu9jm-lvictors-projects.vercel.app/todos` , {
+            const response = await fetch(`https://server-35tb.onrender.com/todos` , {
                 'method' : "GET",
                 'headers': {
             'X-API-KEY': 'f41b66e4-804b-4604-9ed4-c4367916940a',
