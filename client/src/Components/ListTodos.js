@@ -10,7 +10,7 @@ const ListTodos = () => {
 
     const handleTodoDelete = async (id) => {
         try {
-            const deleteTodo = await fetch(`https://server-35tb.onrender.com/todos/:${id}`, {
+            const deleteTodo = await fetch(`https://server-35tb.onrender.com/todos/${id}`, {
                 "method" :"DELETE"
             } )
 
